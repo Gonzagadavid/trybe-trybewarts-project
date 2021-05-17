@@ -92,8 +92,8 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 ## Data de entrega
 
   - Projeto em dupla.
-  - Serão `X` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Serão `1` dia de projeto.
+  - Data de entrega para avaliação final do projeto: `25/05/2021 - 14:00h`.
 
 # Instruções para entregar seu projeto
 
@@ -226,6 +226,21 @@ e de fácil manutenção! Para rodá-los localmente no projeto, execute os coman
 Em caso de dúvidas, confira o material do course sobre [ESLint e Stylelint](https://app.betrybe.com/course/real-life-engineer/eslint).
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ dos **linters**.
+
+---
+
+## Cypress
+
+Cypress é uma ferramenta de teste de front-end desenvolvida para a web.
+Você pode rodar o cypress localmente para verificar se seus requisitos estão passando, para isso execute o seguinte comando:
+
+```bash
+npx cypress open
+```
+
+Você também pode assistir a [este](https://vimeo.com/539240375/a116a166b9) vídeo 😉🎙
+
+**Para rodar o cypress é preciso ter rodado o comando npm install anteriormente.**
 
 ---
 
