@@ -1,0 +1,88 @@
+{
+  "requirements": [
+    { 
+      "description": "1 - Crie uma barra verde na parte superior da página",
+      "bonus": false
+    },
+    { 
+      "description": "2 - Adicione o logotipo da Trybewarts com a classe `trybewarts-header-logo` no canto esquerdo da barra superior",
+      "bonus": false
+    },
+    { 
+      "description": "3 - Acrescente um formulário de autenticação no canto direito da barra superior contendo os inputs de login, de senha e um botão de entrar",
+      "bonus": false
+    },
+    { 
+      "description": "4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header'",
+      "bonus": false
+    },
+    { 
+      "description": "5 - Adicione um formulário no corpo da página, posicionado ao lado esquerdo",
+      "bonus": false
+    },
+    { 
+      "description": "6 - Crie um id para o formulário do requisito 5",
+      "bonus": false
+    },
+    { 
+      "description": "7 - Adicione a logo da Trybewarts no lado direito da página",
+      "bonus": false
+    },
+    { 
+      "description": "8 - Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:'",
+      "bonus": false
+    },
+    { 
+      "description": "9 - Crie um select 'Casa' contendo quatro options",
+      "bonus": false
+    },
+    { 
+      "description": "10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha",
+      "bonus": false
+    },
+    { 
+      "description": "11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha",
+      "bonus": false
+    },
+    { 
+      "description": "12 - Crie um campo de entrada para qual família a pessoa estudante se identifica",
+      "bonus": false
+    },
+    { 
+      "description": "13 - Crie campos de entrada do tipo 'checkbox' contendo seis opções",
+      "bonus": false
+    },
+    { 
+      "description": "14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts",
+      "bonus": false
+    },
+    { 
+      "description": "15 - Crie uma textarea com o id 'textarea' e uma label com a classe 'textarea' contendo o número máximo de caracteres igual à 500",
+      "bonus": false
+    },
+    { 
+      "description": "16 - Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações",
+      "bonus": false
+    },
+    { 
+      "description": "17 - Crie um botão de Enviar para submeter o formulário",
+      "bonus": false
+    },
+    { 
+      "description": "18 - Faça com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada",
+      "bonus": false
+    },
+    { 
+      "description": "19 - Crie um rodapé no final da página",
+      "bonus": false
+    },
+    { 
+      "description": "20 - Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea, variando de 500 até 0, que deverá ser atualizado a medida que algo for digitado na textarea",
+      "bonus": true
+    },
+    { 
+      "description": "21 - Faça com que ao clicar no botão 'Enviar', o conteúdo do formulário seja substituído pelas informações preenchidas",
+      "bonus": true
+    }
+  ]
+}
