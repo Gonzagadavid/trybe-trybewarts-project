@@ -1,4 +1,5 @@
 .header {
   display: flex;
+  justify-content: flex-start;
   background-color: rgb(50, 167, 145);
 }
