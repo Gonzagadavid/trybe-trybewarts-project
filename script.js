@@ -31,3 +31,44 @@ function countChar(event) {
 }
 
 textarea.addEventListener('input', countChar);
+
+const divText = document.createElement('div');
+const firstName = document.getElementById('input-name');
+const lastName = document.getElementById('input-lastname');
+const house = document.getElementById('house');
+const inputEmail = document.getElementById('input-email');
+const evaluationForm = document.getElementById('evaluation-form');
+
+function createParagraph(text) {
+  const p = document.createElement('p');
+  p.innerHTML = text;
+  divText.appendChild(p);
+}
+
+function insertMaterias(array) {
+  let text = 'Matérias:';
+  for (let index = 0; index < array.length; index += 1) {
+    text += ` ${array[index].value}`;
+    if (index !== array.length - 1) text += ',';
+  }
+  createParagraph(text);
+}
+
+function insertInfos(e) {
+  e.preventDefault();
+  const fullName = `Nome: ${firstName.value} ${lastName.value}`;
+  createParagraph(fullName);
+  createParagraph(`Email: ${inputEmail.value}`);
+  createParagraph(`Casa: ${house.value}`);
+  const family = document.querySelector('input[name="family"]:checked');
+  createParagraph(`Família: ${family.value}`);
+  const materias = document.querySelectorAll('input[name="content"]:checked');
+  insertMaterias(materias);
+  const rate = document.querySelector('input[name="rate"]:checked');
+  createParagraph(`Avaliação: ${rate.value}`);
+  createParagraph(`Observações: ${textarea.value}`);
+  evaluationForm.innerHTML = '';
+  evaluationForm.appendChild(divText);
+}
+
+btnSubmit.addEventListener('click', insertInfos);
