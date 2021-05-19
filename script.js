@@ -18,11 +18,7 @@ function checkFormat(event) {
 btnLogin.addEventListener('click', checkFormat);
 
 function enabledAndDisabled(event) {
-  if (event.target.checked === true) {
-    btnSubmit.disabled = false;
-  } else {
-    btnSubmit.disabled = true;
-  }
+  btnSubmit.disabled = event.target.checked !== true;
 }
 
 checkInfos.addEventListener('change', enabledAndDisabled);
