@@ -5,6 +5,8 @@ const regexEmail = /^[\w.-]+@\w+\.\w+$/g;
 const regexSenha = /^\d{6}$/g;
 const checkInfos = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function checkFormat(event) {
   event.preventDefault();
@@ -22,3 +24,10 @@ function enabledAndDisabled(event) {
 }
 
 checkInfos.addEventListener('change', enabledAndDisabled);
+
+function countChar(event) {
+  const result = 500 - event.target.value.length;
+  counter.innerHTML = result;
+}
+
+textarea.addEventListener('input', countChar);
