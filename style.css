@@ -11,25 +11,19 @@
 }
 
 #trybewarts-header-title {
-  /* display: flex;
-  justify-content: space-between;
-  align-content: center; */
   font-size: 30px;
   color: white;
 }
 
 .trybewarts-header-logo {
   width: 80px;
-  /* display: flex;
-  justify-content: flex-start;
-  align-content: center; */
 }
 
-.row {
- 
+.row-input {
   display: flex;
-  justify-content: flex-end;
-  align-content: center; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #btn-login {
@@ -42,14 +36,16 @@
   font-size: 15px;
 }
 
-main, form {
+main , #evaluation-form {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
 
-#evaluation-form{
+#evaluation-form {
   width: 675px;
+  margin: 20px;
+
 }
 
 #trybewarts-forms-logo {
@@ -64,24 +60,11 @@ h2 {
   margin-bottom: 20px;
 }
 
-#evaluation-form {
-  margin: 20px;
-}
-
-
-
-
-
-
-
-
-
-
 footer {
   display: flex;
   justify-content: center;
   padding: 10px;
   color: white;
   font-size: 12px;
-  background-color: #2c2c2c;
+  background-color: rgb(44, 44, 44);
 }
