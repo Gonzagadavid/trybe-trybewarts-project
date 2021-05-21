@@ -7,6 +7,47 @@ const checkInfos = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 const textarea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
+const containerContent = document.getElementById('container-content');
+const containerRate = document.getElementById('container-rate');
+const containerFamily = document.getElementById('container-family');
+
+function createLabel(id, text) {
+  const label = document.createElement('label');
+  label.htmlFor = id;
+  label.className = 'form-check-label';
+  label.innerHTML = text;
+  return label;
+}
+
+function createInput(type, name, value) {
+  const input = document.createElement('input');
+  input.type = type;
+  input.value = value;
+  input.name = name;
+  input.id = `input-${input.value.toLowerCase()}`;
+  input.className = `form-check-input ${name === 'content' ? 'subject' : ''}`;
+  return input;
+}
+
+function createChecks(type, name, arrayValues, elementParent) {
+  for (let index = 0; index < arrayValues.length; index += 1) {
+    const input = createInput(type, name, arrayValues[index]);
+    const label = createLabel(input.id, arrayValues[index]);
+    const div = document.createElement('div');
+    div.className = `form-check ${name === 'rate' ? 'form-check-inline' : ''}`;
+    div.appendChild(input);
+    div.appendChild(label);
+    elementParent.appendChild(div);
+  }
+}
+const arrayFamily = ['Frontend', 'Backend', 'FullStack'];
+createChecks('radio', 'family', arrayFamily, containerFamily);
+
+const arrayContent = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+createChecks('checkbox', 'content', arrayContent, containerContent);
+
+const arrayRate = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+createChecks('radio', 'rate', arrayRate, containerRate);
 
 function checkFormat(event) {
   event.preventDefault();
@@ -56,8 +97,7 @@ function insertMaterias(array) {
 
 function insertInfos(e) {
   e.preventDefault();
-  const fullName = `Nome: ${firstName.value} ${lastName.value}`;
-  createParagraph(fullName);
+  createParagraph(`Nome: ${firstName.value} ${lastName.value}`);
   createParagraph(`Email: ${inputEmail.value}`);
   createParagraph(`Casa: ${house.value}`);
   const family = document.querySelector('input[name="family"]:checked');
