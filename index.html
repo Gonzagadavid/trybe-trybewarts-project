@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style.css">
   <title>Trybewarts</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybe">
@@ -29,7 +30,7 @@
             <input id="input-lastname" class="form-control" type="text" placeholder="Sobrenome" required>
         </div>
         
-        <div class="container row-input form-check col-bg-6">
+        <div class="container row-input form-check col-bg-8 space">
             <label class="form-label" for="input-email"></label>
             <input id="input-email" class="form-control" type="text" placeholder="Email" required>             
             <select id="house" class="form-select" name="casas">
@@ -42,18 +43,21 @@
 
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybe">  
             <hr>
-        <div class="container form-check" id="container-family">
-            <label id="label-family" for="label-family">Qual sua família?</label>
-        </div>
-            <br>
-        <div class="container form-check" id="container-content">
-            <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div id="container-checks">
+            <div class="container form-check" id="container-family">
+                <label id="label-family" for="label-family">Qual sua família?</label>
+            </div>
+                <br>
+            <div class="container form-check" id="container-content">
+                <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+            </div>
         </div>
             <hr>
         <div class="container form-check form-check-inline row-input" id="container-rate" >
             <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-        </div>
+        </div>  
             <hr>
+        <div>
             <label class="form-label textarea" for="textarea">Deixe seu comentário:</label>
             <br>
             <textarea class="form-control" name="commentary" id="textarea" cols="40" rows="10" maxlength="500"></textarea>
@@ -61,9 +65,7 @@
             <br> 
         </div>
         <div class="form-check">
-            <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-            <br>
-            <label class="form-check-label" for="agreement"></label>
+            <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
             <input class="form-check-input" type="checkbox" name="question" id="agreement" value="question">
             <br>
         </div>

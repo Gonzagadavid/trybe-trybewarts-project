@@ -1,18 +1,42 @@
+body {
+  background-image: url('./images/casleto.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: nosferatus, Times New Roman, Times, serif;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   background-color: rgb(50, 167, 145);
   color: white;
+  opacity: 0.7;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+
+}
+
+.trybewarts-login input {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+
+.trybewarts-login input:focus {
+  border: none;
+  outline: none;
 }
 
 #trybewarts-header-title {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
+  text-transform: uppercase;
 }
 
 .trybewarts-header-logo {
@@ -33,24 +57,105 @@
   border: none;
   color: white;
   font-size: 15px;
+  padding: 10px;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 main , #evaluation-form {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
+  font-size: 20px;
 }
 
 #evaluation-form {
   width: 675px;
   margin: 20px;
-
 }
 
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  right: 50px;
+  top: 22%;
+
+}
+
+#evaluation-form input {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#evaluation-form textarea {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#evaluation-form select {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.form-select {
+  margin-right: 10px;
+  width: 610px;
+}
+
+#container-checks {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#container-checks input {
+  margin-top: 15px;
+}
+
+#container-checks label {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#container-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#container-content input [ type = 'checkbox' ] {
+  margin-left: 2px;
+  margin-right: 0;
+}
+
+#container-rate {
+  display: flex;
+  flex-wrap: row-reverse wrap;
+}
+
+#container-rate div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#container-rate input {
+  order: 1;
+}
+
+#container-rate label {
+  order: 0;
+}
+
+
+#label-rate {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -64,6 +169,11 @@ footer {
   justify-content: center;
   padding: 10px;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   background-color: rgb(44, 44, 44);
+}
+
+@font-face {
+  font-family: nosferatus;
+  src: url('./font/NO.TTF');
 }
