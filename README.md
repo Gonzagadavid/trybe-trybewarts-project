@@ -1,7 +1,12 @@
+<div align="center" >
+<h1>TRYBEWARTS</h1>
+<br><br>
+<img src="./images/page.gif" alt="imagem do projeto em funcionamento">
 
-# TRYBEWARTS
+</div>
 
-Projeto em dupla de avaliação feito durante o curso da Trybe, buscando colocar em prática:
+
+## Projeto em dupla de avaliação feito durante o curso da Trybe, buscando colocar em prática:
 
   * Criar formulários em HTML;
 
