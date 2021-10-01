@@ -4,6 +4,10 @@
 <img src="./images/page.gif" alt="imagem do projeto em funcionamento">
 
 </div>
+<br>
+
+## Equipe: 
+<a href="https://github.com/Gonzagadavid">David Gonzaga</a> / <a href="https://github.com/Gabriela-Guerra">Gabriela Guerra</a>
 
 
 ## Projeto em dupla de avaliação feito durante o curso da Trybe, buscando colocar em prática:
@@ -16,6 +20,7 @@
 
   * Construir páginas que alteram o seu layout de acordo com a orientação da tela;
 
+  * Trabalhar em equipe resolvendo conflitos no github;
 
 
 ## Esse projeto foi submetido a testes de 21 requisitos, atingindo 100% dos que foi proposto:
